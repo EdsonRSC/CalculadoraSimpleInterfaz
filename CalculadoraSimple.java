@@ -4,13 +4,13 @@ import java.util.Stack;
 import javax.swing.*;
 
 // Definimos la clase Calculadora que extiende JFrame e implementa ActionListener para manejar eventos
-public class Calculadora extends JFrame implements ActionListener {
+public class CalculadoraSimple extends JFrame implements ActionListener {
     // Declaramos un array de botones y un campo de texto para la pantalla
     JButton botones[];
     JTextField pantalla = new JTextField();
 
     // Constructor de la clase Calculadora
-    public Calculadora() {
+    public CalculadoraSimple() {
         // Establecemos el layout como nulo para posicionar componentes manualmente
         setLayout(null);
 
@@ -212,7 +212,7 @@ public class Calculadora extends JFrame implements ActionListener {
 
     // Método principal para ejecutar la calculadora
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora();
+        CalculadoraSimple calculadora = new CalculadoraSimple();
         calculadora.setBounds(0, 0, 450, 285);
         calculadora.setVisible(true);
         calculadora.setLocationRelativeTo(null);
